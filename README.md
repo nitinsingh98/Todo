@@ -60,16 +60,16 @@ The task has been completed.
 
 ### Installation
 
-1. Clone the repository: `git clone [https://github.com/your-username/todo-app-flask.git](https://github.com/nitinsingh98/Todo.git)`
-2. Create a virtual environment: `python -m venv venv`
-3. Activate the virtual environment: `source venv/bin/activate` (on Linux/Mac) or `venv\Scripts\activate` (on Windows)
-4. Install dependencies: `pip install -r requirements.txt`
-5. Initialize the database:
+1. Clone the repository: `git clone https://github.com/nitinsingh98/Todo.git`
+3. Create a virtual environment: `python -m venv venv`
+4. Activate the virtual environment: `source venv/bin/activate` (on Linux/Mac) or `venv\Scripts\activate` (on Windows)
+5. Install dependencies: `pip install -r requirements.txt`
+6. Initialize the database:
     * First, open the Python interpreter in the same directory:
     * Then execute the following commands:
         * `from app import db`
         * `db.create_all()`
-6. To run the application, execute either `flask run` or `python app.py`.
+7. To run the application, execute either `flask run` or `python app.py`.
 
 
 ### Usage

@@ -93,7 +93,7 @@ The task has been completed.
 ## Authors
 --------
 
-* [Nitin Singh](https://github.com/me50/nitinsingh98)
+* [Nitin Singh](https://github.com/nitinsingh98)
 
 ## Acknowledgments
 ---------------

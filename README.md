@@ -1,2 +1,2 @@
 # Todo
-Create,update and delete reminders
+Create,update and delete reminderss

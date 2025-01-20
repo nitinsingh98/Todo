@@ -1,0 +1,43 @@
+<!-- extends base.html template -->
+<!-- sets title of page to "Login" -->
+{% extends "base.html" %}
+{% block title %}
+  <title>Login</title>
+{% endblock %}
+
+<!-- defines the body of the page -->
+{% block body %}
+  <!-- form to login -->
+  <form method="POST">
+    <!-- header for the form -->
+    <h3 align="center">Login</h3>
+
+    <!-- input field for email -->
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        name="email"
+        placeholder="Enter email"
+      />
+    </div>
+
+    <!-- input field for password -->
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password"
+        name="password"
+        placeholder="Enter password"
+      />
+    </div>
+
+    <!-- submit button -->
+    <br />
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+{% endblock %}

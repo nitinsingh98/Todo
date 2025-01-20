@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  <title> Homepage </title>
+{% endblock title %}
+
+{% block body %}
+
+<!-- Form to add a new Todo item -->
+<form action="/" method="POST">
+    <div class="mb-3">
+        <h1>Add your Todo</h1>
+        <label for="exampleInputEmail1" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title" name="title" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Description</label>
+        <input type="text" class="form-control" id="desc" name="desc">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{% if newtodo|length == 0 %}
+    <!-- Message displayed when there are no Todo items -->
+    <h1>Nothing to show.</h1>
+{% else %}
+    <!-- Table listing all Todo items -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Sno</th>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+                <th scope="col">Date</th>
+                <th scope="col">Status</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for todo in newtodo %}
+            <tr>
+                <th scope="row">{{ loop.index }}</th>
+                <td>{{ todo.title }}</td>
+                <td>{{ todo.desc }}</td>
+                <td>{{ todo.Date }}</td>
+                <td>
+                    {% if todo.status == 'on' %}
+                        <span style="color: green; font-size: large;">Complete</span>
+                    {% else %}
+                        <span style="color: red; font-size: large;">Incomplete</span>
+                    {% endif %}
+                </td>
+                <td>
+                    <!-- Buttons to update or delete the Todo item -->
+                    <a href="/update/{{ todo.sno }}" type="button" class="btn btn-primary">Update</a>
+                    <a href="/delete/{{ todo.sno }}" type="button" class="btn btn-primary">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endif %}
+
+{% endblock body %}
+

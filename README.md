@@ -1,6 +1,7 @@
 # Todo App
 ==========================
-
+* [Video Demo]()
+==========================
 ## Introduction
 ---
 This repository was submitted as the final project for CS50X 2025 online course offered by Harvard University. It’s a web application built around Flask’s framework and some software development/web programming languages covered by the course, such as Python, SQL, HTML, and CSS. The application is designed for storing reminders.

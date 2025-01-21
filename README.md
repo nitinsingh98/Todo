@@ -1,6 +1,6 @@
 # Todo App
 ==========================
-     * [Video Demo]()
+* [Video Demo]()
      
 ==========================
 ## Introduction

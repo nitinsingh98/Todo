@@ -191,6 +191,6 @@ def logout():
     logout_user()
     return redirect('/login')
 
-if __name__ == '__main__':
-    # Run the application
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     # Run the application
+#     app.run(debug=True)
